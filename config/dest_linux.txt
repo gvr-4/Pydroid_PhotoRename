@@ -1,0 +1,20 @@
+##
+## photorename/config/dest_linux.txt
+## 画像移動先
+## 有効なのは最初に見つけた1行だけ．
+## UTF-8,Cr
+##
+## sh-M03 sdカード内部ストレージ統合
+## sh-m03 sdカード破損交換のついでにパス整理
+## SH-M03 2018/05/01(火) カード破損……あららパスが変わってる？
+## 2021/07/04 R2C pythonに移植、Dir場所を最新に
+/storage/083A-B2E7/doc/photo
+
+## /storage/emulated/0/doc/photo/album
+## でも従来のバスも使えるかも．
+#/sdcard/doc/photo/album
+#/sdcard/PRIVATE/SHARP/CM/Photo
+#/sdcard/external_sd/PRIVATE/SHARP/CM/Photo
+#/storage/9C33-6BBD/PRIVATE/SHARP/CM/Photo
+#/sdcard/PRIVATE/SHARP/CM/Photo
+#/storage/emulated/0/doc/photo/album

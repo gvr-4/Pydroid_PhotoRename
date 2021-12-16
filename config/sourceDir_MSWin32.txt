@@ -1,0 +1,1 @@
+#### photorename/config/sourceDir_MSWin32.txt## 	source_*.txtから改名##  これはandroid版から大きく異なる．まあ，ドライブってのがあるからね，こっちは．####	行末の\は不要C:\DCIM	# こめんとですD:\DCIME:\DCIM F:\DCIMG:\DCIMH:\DCIM    I:\DCIMJ:\DCIMK:\DCIMC:\doc\pictures\Eye-FiC:\doc\pictures\Camera Roll

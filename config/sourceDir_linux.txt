@@ -1,0 +1,37 @@
+##
+## photorename/config/sourceDir_linux.txt
+## 画像読み取り場所のリスト
+##
+
+##
+## android 4.2 SH-06E
+##
+#/sdcard/DCIM
+#/sdcard/external_sd/DCIM
+#/sdcard/external_sd/Eye-Fi
+#/sdcard/Pictures/Screenshots
+
+##
+## Android 6.0.1 SH-M03
+##
+#/sdcard/DCIM
+#/sdcard/Eye-Fi
+#/sdcard/Pictures
+#/storage/9C33-6BBD/DCIM
+#/sdcard/external_sd/DCIM
+#/sdcard/external_sd/Eye-Fi
+
+##
+## Sh-M03 sdカード内部統合
+##
+##/sdcard/DCIM
+##/sdcard/Eye-Fi
+##/sdcard/Pictures
+
+##
+## Sh-803SH R2C
+##
+/storage/emulated/0/DCIM
+/storage/emulated/0/Pictures
+/storage/083A-B2E7/DCIM
+/storage/083A-B2E7/Pictures

@@ -1,0 +1,7 @@
+##
+## photorename/config/dest_MSWin32.txt
+## 画像移動先
+## 物理構造が違うんでandroid版とはだいぶ違う
+## UTF-8,Cr
+##
+C:\doc\pictures\Camera\Album

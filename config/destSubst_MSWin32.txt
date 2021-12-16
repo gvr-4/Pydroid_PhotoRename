@@ -1,0 +1,7 @@
+##
+## photorename/config/destSubst_MSWin32.txt
+## ファイル改名ルール 
+## 同名のandroig版のディクトリ区切り文字を差し替えただけ
+## UTF-8,Cr
+##
+{YYYY}\{YYYY}{MM}{DD}\{YYYY}{MM}{DD}-{hh}{mm}{ss}

@@ -1,0 +1,7 @@
+##
+## photorename/config/destCc_linux.txt
+## コピー保存先．バックアップ用．
+## 有効なのは最初に見つけた1行だけ．
+## UTF-8,Cr
+## …動くかどうか不明． 実験中
+//nyago-nas01/data/tmp_backup

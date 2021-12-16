@@ -1,0 +1,6 @@
+##
+## photorename/config/destCc_MSWin32.txt
+## 同名のandroid版のディレクトリ区切り文字を差し替えただけ．
+## UTF-8,Cr
+\\nyago-nas01\data\tmp_backup
+

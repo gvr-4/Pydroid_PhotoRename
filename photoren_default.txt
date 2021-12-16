@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+# .\photoren_default.txt
+#
+# pthoren*.py
+# default value of commandline options for phoren*.py
+# those values in this file, will overwritten default as source.py
+# if you modify values, 
+# you can use command line options to be determin the final.
+
+## コマンドラインオプション，その初期値
+FlagCc		= 0		# /c carbon copy
+FlagDeleteTN	= 0		# /t delete Thumbnails (no longer used)
+FlagListOnly	= 0  		# /l listing only, do not move and rename.
+FlagDebug	= 0		# /d debug dump.
+FlagShowAll	= 0		# /s show all tag items
+LogFileName	= pr		# /f log file prefix
+ConfigDirName	= config	# /p dir name of config
+
