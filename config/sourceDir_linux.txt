@@ -1,8 +1,7 @@
 ##
 ## photorename/config/sourceDir_linux.txt
 ## 画像読み取り場所のリスト
-##
-
+## 20210809 Movies追加
 ##
 ## android 4.2 SH-06E
 ##
@@ -33,5 +32,7 @@
 ##
 /storage/emulated/0/DCIM
 /storage/emulated/0/Pictures
+/storage/emulated/0/Movies
 /storage/083A-B2E7/DCIM
 /storage/083A-B2E7/Pictures
+/storage/083A-B2E7/Movies

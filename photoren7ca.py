@@ -10,6 +10,9 @@
 	・subなり関数なりに切り出し．
 	・移動した後，空ディレクトリが残った場合の掃除は？
 
+2022/03/16(水)
+	済 画面表意している処理対象ファイルの数を修正．
+
 2021/07/17(土)
 	済 細かい起動オプションをファイルに外だし．./photoren_default.txt
 	これに伴い，ソース上の初期値は，/l だけを1にする．あとはdefaultファイルかコマンドラインで設定する．
@@ -90,7 +93,7 @@
 ## コマンドラインオプション，その初期値
 FlagCc		 = 0	# カーボンコピーを実行
 FlagDeleteTN = 0	# サムネイルの削除 ※廃止予定
-FlagListOnly = 1    # リストするだけで変更をしない．
+FlagListOnly = 1	# リストするだけで変更をしない．
 FlagDebug	 = 0	# デバッグ出力
 FlagShowAll =  0	# EXIFtagを全部表示
 LogFileName = "pr"	# ログファイルプレフィックス
@@ -252,7 +255,7 @@ def main():
 	## ソースDirを順にまわって対象のファイルを集め，改名と移動する
 	## 5a ソースディレクトリを複数指定可能に，かつ，再帰検索して下位のフォルダ内も検索対象とした．
 	##
-	numfiles = 0		# ファイル総数
+	numfilesFound = 0		# ファイル総数
 	numFilesDone = 0	# 処理した数
 	srcfilelist = []	# 対象ファイル名のリスト
 	tmp_count = 0
@@ -264,7 +267,8 @@ def main():
 		# ソースDirの中にある対象ファイルをすべて集めて一つのファイルリストにする
 		#
 		srcfilelist = get_filelist( part_dir )	#ソースDirの中の対象ファイルのリスト
-		numfiles += len( srcfilelist )
+		numfiles = len( srcfilelist )
+		numfilesFound += numfiles
 
 		if( PRINT( " --files[" + str( numfiles ) + "] found in[" + part_dir + "]\n" ) ):
 			for tmp_file, opt in srcfilelist:
@@ -392,7 +396,7 @@ def main():
 	tmp_ListOnly = " [ListOnly]" if( FlagListOnly == 1 ) else ""
 
 	PRINT( "\n " \
-	 + " Files total[" + str( numfiles ) + "]\n" \
+	 + " Files total[" + str( numfilesFound ) + "]\n" \
 	 + "      renamed[" + str( numFilesDone ) + "]" + tmp_ListOnly + "\n" \
 	 + "End of Photo Rename.\n" );
 	FH_LOG.close()
@@ -779,7 +783,7 @@ def dPRINT( *msgs, sep = "", end = "", file = "", quit = False ):
 		# 複数のオブジェクト引数が1個のタプルになって渡ってきてるんで，
 		# join()を使って文字列に組み立て直してから出力する．
 		#
-		if( FH_LOG  != 0 ):
+		if( FH_LOG	!= 0 ):
 			print( "".join(msgs), sep = sep_arg, end = end_arg, file = FH_LOG, flush = flush_arg )	#log file
 		print( "".join(msgs), sep = sep_arg, end = end_arg )									#file = sys.stdout
 
